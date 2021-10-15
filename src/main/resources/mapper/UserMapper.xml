@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jie.mapper.UserMapper">
+
+    <!-- 用户 -->
+    <resultMap id="user" type="com.jie.pojo.User">
+
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="mobile" jdbcType="VARCHAR" property="mobile"/>
+        <result column="inviteCode" jdbcType="VARCHAR" property="inviteCode"/>
+        <result column="userType" jdbcType="VARCHAR" property="userType"/>
+        <result column="appid" jdbcType="BIGINT" property="appid"/>
+        <result column="openid" jdbcType="BIGINT" property="openid"/>
+        <result column="unionid" jdbcType="BIGINT" property="unionid"/>
+        <result column="create_user" jdbcType="BIGINT" property="createUser"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="update_user" jdbcType="BIGINT" property="updateUser"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="delete_flag" jdbcType="INTEGER" property="deleteFlag"/>
+    </resultMap>
+
+<!--    <select id="queryUserList" resultType="User">-->
+<!--        select * from t_user-->
+<!--    </select>-->
+
+</mapper>
